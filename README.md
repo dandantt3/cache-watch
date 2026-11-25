@@ -14,18 +14,18 @@ Dollar figures are estimates from a guessed per-model base input price. Set `inp
 At the prompt of a terminal session:
 
 ```
-/plugin install cache-watch --marketplace <owner>/<repo>
+/plugin install cache-watch --marketplace dandantt3/cache-watch
 ```
 
 From a shell:
 
 ```
-claude plugin install cache-watch --marketplace <owner>/<repo>
+claude plugin install cache-watch --marketplace dandantt3/cache-watch
 ```
 
-In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `<owner>/<repo>`, then Add plugin.
+In the desktop app, where `/plugin` does not run: click + next to the prompt box, then Plugins, Add marketplace with `dandantt3/cache-watch`, then Add plugin.
 
-If the repository is private, you need read access on GitHub and a git credential for github.com on your machine (an SSH key, or `gh auth login` then `gh auth setup-git`).
+This repository is public, so no GitHub access or credential is needed to install.
 
 ## Options
 
@@ -34,3 +34,7 @@ If the repository is private, you need read access on GitHub and a git credentia
 | `ttl` | `auto` | `auto`, `5m` or `1h` |
 | `warnMinutes` | `5` | minutes before cold to warn |
 | `inputUsdPerMTok` | `0` | base input price override; 0 guesses from the model name |
+
+## License
+
+MIT, see `LICENSE`.

@@ -173,7 +173,7 @@ export const register: Register = (on, options) => {
     return (
       <Box>
         <Text color={isSoon ? 'yellow' : 'green'}>
-          Cache {isSoon ? 'COOLING' : 'warm'} · {clock(left)} left ({ttlLabel}) · if it expires: ≈ {usd(p.write)} to re-cache {tok} (est.){' '}
+          Cache {isSoon ? 'COOLING' : 'warm'} · {clock(left)} left ({ttlLabel}) · {tok} · expires: ≈ {usd(p.write)} · keep warm: ≈ {usd(p.read)} (est.){' '}
         </Text>
         <Button key="keep" label="Keep warm" onPress={() => keepWarm($)} />
         {s.note ? <Text dimColor> {s.note}</Text> : null}

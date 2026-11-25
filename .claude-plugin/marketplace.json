@@ -1,0 +1,5 @@
+{
+  "name": "cache-watch",
+  "owner": { "name": "cache-watch" },
+  "plugins": [{ "name": "cache-watch", "source": "./" }]
+}
